@@ -1,0 +1,35 @@
+.appWrapper {
+  height: 100%;
+  font-size: 18px;
+  .appContainer {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    height: 100%;
+    .headerWrapper {
+      background-color: blueviolet;
+    }
+    .mainContentWrapper {
+      background-color: blue;
+      font-size: 2rem;
+      display: flex;
+      .learnMoreContainer {
+        background-color: aquamarine;
+        width: 100%;
+        height: 100%;
+      }
+      .imageWrapper {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 100%;
+        .imageContainer {
+          width: 70%;
+          height: 80%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
