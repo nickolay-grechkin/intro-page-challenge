@@ -9,37 +9,70 @@
       background-color: blueviolet;
     }
     .mainContentWrapper {
-      background-color: blue;
       display: flex;
-      .learnMoreContainer {
-        background-color: aquamarine;
+      align-items: center;
+      .mainContentContainer {
+        display: flex;
+        align-items: center;
         width: 100%;
-        height: 100%;
-        font-family: Epilogue, sans-serif;
-        .title {
-          font-weight: 700;
-          font-size: 3.5rem;
-        }
-        .description {
-          color: hsl(0, 0%, 41%);
-          font-size: 13px;
-          font-weight: 500;
-        }
+        .learnMoreWrapper {
+          width: 100%;
+          height: 100%;
+          font-family: Epilogue, sans-serif;
+          display: flex;
+          justify-content: center;
+          .learnMoreContainer {
+            width: 50%;
+            min-width: 230px;
+            max-width: 22.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+            .learnMoreButton {
+              width: 9.5em;
+              padding: 1.163rem 0.05em;
+              background-color: hsl(0deg, 0%, 8%);
+              border-radius: 15px;
+              text-align: center;
+              color: white;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            .title {
+              font-weight: 700;
+              font-size: 4rem;
+            }
 
-      }
-      .imageWrapper {
-        background-color: antiquewhite;
-        width: 100%;
-        height: 100%;
-        .imageContainer {
-          width: 65%;
-          height: 80%;
-          img {
-            width: 100%;
-            height: 100%;
+            .description {
+              color: hsl(0, 0%, 41%);
+              font-size: 15px;
+              font-weight: 500;
+            }
+          }
+
+        }
+        .imageWrapper {
+          width: 88%;
+          height: 100%;
+
+          .imageContainer {
+            width: 62%;
+            min-width: 350px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 390px){
+  .mainContentContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 90%;
   }
 }
