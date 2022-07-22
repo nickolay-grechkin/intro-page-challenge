@@ -9,7 +9,13 @@ function App() {
         <div className={styles.headerWrapper} />
           <div className={styles.mainContentWrapper}>
               <div className={styles.learnMoreContainer}>
-
+                  <div className={styles.title}>
+                      Make remote work
+                  </div>
+                  <div className={styles.description}>
+                      Get your team in sync, no matter your location. Streamline processes,
+                      create team rituals, and watch productivity soar.
+                  </div>
               </div>
               <div className={styles.imageWrapper}>
                   <div className={styles.imageContainer}>

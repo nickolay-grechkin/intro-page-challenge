@@ -10,19 +10,29 @@
     }
     .mainContentWrapper {
       background-color: blue;
-      font-size: 2rem;
       display: flex;
       .learnMoreContainer {
         background-color: aquamarine;
         width: 100%;
         height: 100%;
+        font-family: Epilogue, sans-serif;
+        .title {
+          font-weight: 700;
+          font-size: 3.5rem;
+        }
+        .description {
+          color: hsl(0, 0%, 41%);
+          font-size: 13px;
+          font-weight: 500;
+        }
+
       }
       .imageWrapper {
         background-color: antiquewhite;
         width: 100%;
         height: 100%;
         .imageContainer {
-          width: 70%;
+          width: 65%;
           height: 80%;
           img {
             width: 100%;
