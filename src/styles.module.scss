@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 13.7em;
+    gap: 13vh;
     .learnMoreContainer {
       width: 100%;
       min-width: 230px;
@@ -67,8 +67,11 @@
     }
   }
   .imageWrapper {
+    display: flex;
+    justify-content: flex-end;
     .imageContainer {
       min-width: 350px;
+      width: 75%;
       max-width: 560px;
       img {
         width: 100%;
